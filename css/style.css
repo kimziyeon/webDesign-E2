@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+}
+
+
+.wrap {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.top {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+}
+
+header {
+    width: 200px;
+    text-align: center;
+}
+
+header>a {
+    width: 100%;
+    margin: 30px 0;
+}
+
+nav {}
+
+nav>ul {}
+
+nav>ul>li {}
+
+nav>ul>li>a {
+    height: 50px;
+    align-content: center;
+    background-color: #006362;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+
+nav>ul>li>a.on,
+nav>ul>li:hover>a {
+    background-color: #333;
+}
+
+.sub {
+    display: none;
+}
+
+.sub>li {}
+
+.sub>li>a {
+    height: 50px;
+    align-content: center;
+    background-color: #e8fffe;
+}
+
+.sub>li>a.on,
+.sub>li:hover>a {
+    background-color: #fff;
+    color: #006362;
+}
+
+
+main {
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+
+}
+
+main h3 {
+    width: 100px;
+    display: inline-block;
+    background-color: #006362;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.notice {
+    width: 100%;
+    height: 30%;
+    border-bottom: 1px solid #dadada;
+}
+
+.notice>ul {}
+
+.notice>ul>li {}
+
+.notice>ul>li>a {
+    width: 100%;
+    border-bottom: 4px solid #006362;
+}
+
+.notice>ul>li>a>h3 {}
+
+.notice>ul>li>ul {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.notice>ul>li>ul>li {
+    margin: 5px 0;
+}
+
+.notice>ul>li>ul>li>a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice>ul>li>ul>li>a .tt {}
+
+
+
+.gall {
+    width: 100%;
+    height: 40%;
+    border-bottom: 1px solid #dadada;
+
+    margin-top: 20px;
+}
+
+.gall>ul {
+    width: 100%;
+
+}
+
+.gall>ul>li {}
+
+.gall>ul>li>a {
+    width: 100%;
+    border-bottom: 4px solid #006362;
+}
+
+.gall>ul>li>a>h3 {}
+
+.gall>ul>li>ul {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+.direct {
+    width: 100%;
+    height: 25%;
+    margin-top: 20px;
+
+}
+
+.direct>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.direct>ul>li {}
+
+.direct>ul>li>a {
+    width: 100%;
+    text-align: center;
+}
+
+.direct>ul>li>a>p {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.slide {
+    width: calc(100% - 600px);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.slide>ul {
+    width: 100%;
+    height: 1800px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* transform: translateY(-200px); */
+}
+
+.slide>ul>li {
+    height: 600px;
+}
+
+.slide>ul>li>a {
+    width: 100%;
+    height: 100%;
+    align-content: end;
+}
+
+.s_text {
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 40px 50px;
+}
+
+.s_text>h2 {
+    font-size: 30px;
+}
+
+.s_text>p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.s_text>p>span {}
+
+.slide .s1 {
+    background: url(/images/img1.jpg) no-repeat center / cover;
+}
+
+.slide .s2 {
+    background: url(/images/img2.jpg) no-repeat center / cover;
+
+}
+
+.slide .s3 {
+    background: url(/images/img3.jpg) no-repeat center / cover;
+
+}
+
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #dadada;
+    display: flex;
+    align-items: center;
+
+}
+
+footer>a {
+    width: 200px;
+    height: 100%;
+    align-content: center;
+}
+
+footer .copy {
+    width: 70%;
+    margin-left: 30px;
+}
+
+footer .fam {}
+
+.pop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: none;
+}
+
+.pop .p_inner {
+    background-color: #fff;
+    width: 40%;
+    height: 50%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.pop .p_inner>h2 {
+    margin-bottom: 20px;
+}
+
+.pop .p_inner>p {
+    line-height: 24px;
+}
+
+.pop .p_inner .pop_off {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.pop .p_inner .pop_off:hover {
+    color: #006362;
+}
