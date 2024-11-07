@@ -30,7 +30,8 @@ body {
 
 .wrap {
     width: 100%;
-    height: 700px;
+    height: 100vh;
+    min-height: 700px;
     position: relative;
 }
 
@@ -111,6 +112,7 @@ main h3 {
     width: 100%;
     height: 30%;
     border-bottom: 1px solid #dadada;
+    overflow: hidden;
 }
 
 .notice>ul {}
@@ -147,8 +149,9 @@ main h3 {
     width: 100%;
     height: 40%;
     border-bottom: 1px solid #dadada;
-
     margin-top: 20px;
+    overflow: hidden;
+
 }
 
 .gall>ul {
@@ -179,6 +182,8 @@ main h3 {
     width: 100%;
     height: 25%;
     margin-top: 20px;
+    overflow: hidden;
+
 
 }
 
@@ -213,7 +218,7 @@ main h3 {
 
 .slide>ul {
     width: 100%;
-    height: 1800px;
+    height: 300%;
     position: absolute;
     left: 0;
     top: 0;
@@ -221,7 +226,7 @@ main h3 {
 }
 
 .slide>ul>li {
-    height: 600px;
+    height: calc(100% / 3);
 }
 
 .slide>ul>li>a {
